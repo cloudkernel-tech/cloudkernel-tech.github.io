@@ -1,0 +1,59 @@
+site_name: Kerloud Autopilot
+site_url: http://cloudkernel-tech.gitee.io/kerloud-autopilot
+
+theme:
+    name: material
+    logo: assets/logo_mono.png
+    favicon: assets/logo.png
+    palette:
+        scheme:  slate #slate or default
+        primary: indigo #blue grey
+    features:
+      - navigation.tabs
+      - navigation.tabs.sticky
+      - navigation.indexes
+      - navigation.instant
+      #- toc.integrate # this option will make toc integrated on the left
+      - navigation.footer
+
+markdown_extensions:
+  - tables
+  - toc:
+      permalink: true
+      title: Table of Contents
+
+plugins:
+  - search
+
+nav:
+    - Home: index.md
+    - 'Kerloud Autopilot User Guide':
+        - 'Introduction': intro.md
+        - 'Hardware Options':
+            -  hardware/index.md
+            - 'Kerloud Uno': hardware/kerloud_uno.md
+            - 'Kerloud Mini': hardware/kerloud_mini.md
+        - 'Basic Setup': basicsetup.md
+        - 'Advanced Development': advanceddev.md
+        - 'Peripherals':
+            - peripherals/index.md
+            - 'Kerloud Lite Power Module': peripherals/kerloud_lite.md
+            - 'Kerloud Telemetry': peripherals/kerloud_telemetry.md
+    - 'Kerloud 自驾仪使用说明':
+        - '介绍':  intro_zh.md
+        - '硬件选项':
+           - hardware_zh/index.md
+           - 'Kerloud Uno': hardware_zh/kerloud_uno_zh.md
+           - 'Kerloud Mini': hardware_zh/kerloud_mini_zh.md
+        - '基本设置':  basicsetup_zh.md
+        - '高级开发':  advanceddev_zh.md
+        - '配套外设':
+            - peripherals_zh/index.md
+            - 'Kerloud Lite 供电模块': peripherals_zh/kerloud_lite_zh.md
+            - 'Kerloud Telemetry数传': peripherals_zh/kerloud_telemetry_zh.md
+
+
+copyright: Copyright &copy; 2019- Cloudkernel Technologies (Shenzhen) Co.,Ltd，云讷科技（深圳）有限公司
+
+extra:
+  homepage: https://cloudkernel-tech.github.io
